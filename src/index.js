@@ -1,5 +1,5 @@
-import { increment } from '../modules/counter';
-import { log } from '../modules/logger';
+import { increment } from './modules/counter.js';
+import { log } from './modules/logger.js';
 
 const button = document.querySelector('#btn');
 const output = document.querySelector('#output');
