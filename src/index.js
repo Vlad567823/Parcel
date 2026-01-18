@@ -1,7 +1,11 @@
-import { add } from "../modules/math.js";
-import { greeting } from "../modules/message.js";
+import { increment } from '../modules/counter';
+import { log } from '../modules/logger';
 
-const result = add(10, 20);
-const text = `${greeting("Влад")} Результат: ${result}`;
+const button = document.querySelector('#btn');
+const output = document.querySelector('#output');
 
-document.getElementById("app").textContent = text;
+button.addEventListener('click', () => {
+  const value = increment();
+  output.textContent = value;
+  log(value);
+});

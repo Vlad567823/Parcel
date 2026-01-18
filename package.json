@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-     "start": "parcel index.html",
-    "build": "parcel build index.html --public-url ./Parcel/",
-    "deploy": "parcel build index.html --public-url ./Parcel / && gh-pages -d dist",
-    "deploy:gh-pages": "gh-pages -d dist"
-  },
+  "start": "parcel src/index.html",
+  "build": "parcel build src/index.html --public-url ./",
+  "deploy": "npm run build && gh-pages -d dist"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Vlad567823/Parcel.git"
